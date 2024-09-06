@@ -25,3 +25,7 @@ spring:
            uri: lb://order-service
            predicates:
              - Path=/api/v1/orders/**
+---
+jwt:
+  secret:
+    key: ${JWT_SECRET_KEY}
